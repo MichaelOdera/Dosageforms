@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/timer.css" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Health Timer</h1>
+    <hr>
+
+    <div id="pomodoro" class="text-center">
+      <div id="status"></div>
+      <div class="timerDisplay text-center">25:00</div>
+      <button id="start-btn" class="btn btn-success">START</button>
+    </div>
+
+    <div class="settings">
+      <div id="work" class="text-center">
+        <p>Waiting Duration</p>
+        <button class="btn-settings plus bg-info" id="work-plus">+</button>
+        <div><span id="work-min">25</span> mins</div>
+        <button class="btn-settings minus bg-info" id="work-minus">-</button>
+      </div>
+
+      <button id="reset" class="btn btn-danger">RESET</button>
+
+      <div id="break" class="text-center">
+        <p>Break Duration</p>
+        <button class="btn-settings plus bg-info" id="break-plus">+</button>
+        <div><span id="break-min">5</span> mins</div>
+        <button class="btn-settings minus bg-info" id="break-minus">-</button>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="js/timer.js">
+  </script>
+</body>
+
+</html>
